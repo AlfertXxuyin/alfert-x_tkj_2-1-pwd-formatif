@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/image p7.png');
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+#about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#about-container .about-card {
+    background-color: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.about-card > h2 {
+    font-size: 28px;
+    color: #1d2d50; 
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-card > p {
+    font-size: 15px;
+    color: #2d3748; 
+    line-height: 1.7;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.about-card .author-name {
+    text-align: right;
+    font-style: italic;
+    font-weight: 600;
+    color: #e28743; 
+    margin-top: 25px;
+}
+
+footer {
+    padding: 15px 0;
+}
+
+footer .btn-back {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+
+footer .btn-back:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+}
