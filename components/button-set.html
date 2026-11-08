@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 1.2 - Kumpulan Tombol Rata Tengah</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f9fa; 
+            font-family: Arial, sans-serif; 
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;   
+            padding: 20px;
+        }
+
+        main {
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h2 {
+            color: #212529; 
+            font-size: 20px; 
+            margin-bottom: 10px;
+        }
+
+        .section-label {
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block; 
+            padding: 12px 24px; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            text-decoration: none; 
+            border: 2px solid transparent; 
+            transition: all 0.2s ease;
+            
+            cursor: pointer;
+        }
+        .button-group .btn {
+            margin-right: 10px; 
+            margin-bottom: 10px;
+        }
+        
+        .btn-primary {
+            background-color: #1d2d50; 
+            color: #ffffff;
+        }
+    
+        .btn-secondary {
+            background-color: rgb(180, 198, 231); 
+        }
+
+    
+        .btn-outline {
+            background-color: rgba(255, 255, 255, 1); 
+            border-color: #1d2d50; 
+        }
+
+        .btn-send {
+            background-color: chocolate; 
+            color: white;
+        }
+
+      
+        .btn-secondary, .btn-outline {
+            color: #333333; 
+        }
+
+        .btn-primary:hover {
+            background-color: #131c33;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgb(143, 170, 220);
+        }
+
+        .btn-outline:hover {
+            background-color: #1d2d50;
+            color: #ffffff;
+        }
+
+        .btn-send:hover {
+            background-color: #a0522d;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #6f42c1;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h2> Kumpulan Tombol</h2>
+
+        <p class="section-label">Pilihan Menu Portofolio</p>
+        
+        <div class="button-group">
+            <a href="../pages/gallery.html" class="btn btn-primary">Lihat Proyek</a>
+            
+            <a href="#" class="btn btn-secondary">Unduh CV</a>
+            
+            <a href="../pages/about.html" class="btn btn-outline">Hubungi Saya</a>
+            
+            <a href="../pages/contact.html" class="btn btn-send">Kirim Pesan</a>
+        </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <a href="../index.html">Kembali ke Beranda</a>
+    </footer>
+
+</body>
+</html>
