@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+#hero-section {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../assets/images/image p8.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#hero-section .hero-box {
+    background-color: rgba(31, 38, 52, 0.85); 
+    padding: 35px 50px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 550px;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.hero-box h1 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.hero-box p {
+    color: #a0aec0;
+    font-size: 13px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.hero-box .btn-project {
+    display: inline-block;
+    background-color: #e28743; 
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 24px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.hero-box .btn-project:hover {
+    background-color: #cd6e27;
+    transform: scale(1.03);
+}
+
+.hero-box h1, 
+.hero-box p, 
+.hero-box .btn-project {
+    animation: naikMuncul 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes naikMuncul {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer .btn-back {
+    color: #4a5568;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+footer .btn-back:hover {
+    color: #1a202c;
+}
